@@ -20,3 +20,8 @@
 ###我们开源，我们做好设计，我们不乱使用权限，只求你如果喜欢，可以分享给你的朋友们，好东西需要分享才能让其健康成长，每一次分享都是我们的动力，非常感谢！
 
 
+#下载
+
+Google Play：https://play.google.com/store/apps/details?id=me.drakeet.inmessage
+
+Fir：http://fir.im/codehelper

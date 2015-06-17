@@ -1,0 +1,306 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             tools:context="me.drakeet.inmessage.AboutActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/about_header_height"
+        android:background="@color/about_header_background"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@mipmap/ic_incode"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="验证码助手 - 不用记数字不用输入完成验证"
+            android:textColor="@color/white"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Version 1.0"
+            android:textColor="@color/white"
+            android:textSize="14dp"/>
+    </LinearLayout>
+
+    <com.github.ksoichiro.android.observablescrollview.ObservableScrollView
+        android:id="@+id/sv_about"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/about_header_height"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="介绍与帮助"
+                android:textColor="@color/md_grey_600"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:text="@string/introduce"
+                    android:textColor="@color/md_grey_800"
+                    android:textSize="14sp"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="12dp"
+                android:background="@color/md_grey_500"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:text="开发人员"
+                android:textColor="@color/md_grey_600"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card">
+
+                <ImageView
+                    android:id="@+id/ig_avatar_manong"
+                    android:layout_width="@dimen/avatar_size"
+                    android:layout_height="@dimen/avatar_size"
+                    android:layout_margin="16dp"
+                    android:src="@mipmap/avatar_manong"/>
+
+                <TextView
+                    android:id="@+id/tv_manong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/ig_avatar_manong"
+                    android:layout_toRightOf="@id/ig_avatar_manong"
+                    android:text="manongzhuguan"
+                    android:textColor="@color/md_grey_800"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_manong"
+                    android:layout_toRightOf="@id/ig_avatar_manong"
+                    android:text="开发者"
+                    android:textColor="@color/md_grey_600"/>
+
+                <ImageView
+                    android:id="@+id/ig_avatar_drakeet"
+                    android:layout_width="@dimen/avatar_size"
+                    android:layout_height="@dimen/avatar_size"
+                    android:layout_below="@id/ig_avatar_manong"
+                    android:layout_margin="16dp"
+                    android:src="@mipmap/avatar_drakeet"/>
+
+                <TextView
+                    android:id="@+id/tv_drakeet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/ig_avatar_drakeet"
+                    android:layout_toRightOf="@id/ig_avatar_drakeet"
+                    android:text="drakeet"
+                    android:textColor="@color/md_grey_800"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_drakeet"
+                    android:layout_toRightOf="@id/ig_avatar_drakeet"
+                    android:text="开发者 &amp; 设计"
+                    android:textColor="@color/md_grey_600"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="12dp"
+                android:background="@color/md_grey_500"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:text="开源协议"
+                android:textColor="@color/md_grey_600"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/card"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tv_otto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="otto - Square"
+                    android:textColor="@color/md_grey_800"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_otto"
+                    android:text="https://github.com/square/otto\nApache Software License 2.0"
+                    android:textColor="@color/md_grey_600"
+                    android:textSize="@dimen/open_source_lis_text_size"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/card"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tv_butterknife"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ButterKnife - Jake Wharton"
+                    android:textColor="@color/md_grey_800"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_butterknife"
+                    android:text="http://jakewharton.github.io/butterknife\nApache Software License 2.0"
+                    android:textColor="@color/md_grey_600"
+                    android:textSize="@dimen/open_source_lis_text_size"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card"
+                style="@style/LisPaddingStyle"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:id="@+id/tv_numberprogressbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NumberProgressbar - 代码家"
+                    android:textColor="@color/md_grey_800"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_numberprogressbar"
+                    android:text="https://github.com/daimajia/NumberProgressBar\nMIT License"
+                    android:textColor="@color/md_grey_600"
+                    android:textSize="@dimen/open_source_lis_text_size"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card"
+                android:layout_marginBottom="16dp"
+                style="@style/LisPaddingStyle" >
+
+                <TextView
+                    android:id="@+id/tv_litepal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LitePal - Tony Green"
+                    android:textColor="@color/md_grey_800"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_litepal"
+                    android:text="https://github.com/LitePalFramework/LitePal\nApache Software License 2.0"
+                    android:textColor="@color/md_grey_600"
+                    android:textSize="@dimen/open_source_lis_text_size"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card"
+                android:layout_marginBottom="16dp"
+                style="@style/LisPaddingStyle">
+
+                <TextView
+                    android:id="@+id/tv_fab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="floating-action-button - Jerzy Chalupski"
+                    android:textColor="@color/md_grey_800"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_fab"
+                    android:text="https://github.com/futuresimple/android-floating-action-button\nApache Software License 2.0"
+                    android:textColor="@color/md_grey_600"
+                    android:textSize="@dimen/open_source_lis_text_size"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/card"
+                style="@style/LisPaddingStyle">
+
+                <TextView
+                    android:id="@+id/tv_obs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ObservableScrollView - Soichiro Kashima"
+                    android:textColor="@color/md_grey_800"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_obs"
+                    android:text="https://github.com/ksoichiro/Android-ObservableScrollView\nApache Software License 2.0"
+                    android:textColor="@color/md_grey_600"
+                    android:textSize="@dimen/open_source_lis_text_size"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </com.github.ksoichiro.android.observablescrollview.ObservableScrollView>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        app:navigationIcon="@mipmap/ic_arrow_back_white_24dp"
+        android:theme="@style/ActionBarPopupThemeOverlay"/>
+
+</FrameLayout>

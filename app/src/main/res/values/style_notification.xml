@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="NotificationContent" parent="android:TextAppearance.StatusBar.EventContent" />
+
+    <style name="NotificationTitle" parent="android:TextAppearance.StatusBar.EventContent.Title" />
+
+    <style name="NotificationContentForMIUI6" parent="android:TextAppearance.StatusBar.EventContent" />
+
+    <style name="NotificationTitleForMIUI6" parent="android:TextAppearance.StatusBar.EventContent.Title" />
+</resources>

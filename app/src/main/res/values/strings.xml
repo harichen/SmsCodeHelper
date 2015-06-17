@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">验证码助手</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="about">关于</string>
+    <string name="title_activity_about">@string/about</string>
+    <string name="introduce">验证码助手，是由原「贝壳单词」团队开发的一款新的开源轻App.\n\n它可以在手机接收到验证码短信的时候，自动浮现验证码，并自动复制验证码到用户的剪切板。当用户接收到短信验证码，只要长按验证码的输入框，粘贴验证码即可。\n\n除此之外，还可以让用户批量删除无用验证码短信，帮助用户反向推理出绑定了哪些业务（换号必备啊有木有）。\n\n我们做得非常轻，也秉承了一贯的好设计和用户友好，在闲时它不会自启动、不会偷跑流量、不会占用任何内存（不信或担忧的话欢迎查看源代码~）。\n\n开放源代码地址：https://github.com/drakeet/SmsCodeHelper\n\n我们开源，我们做好设计，我们不乱使用权限，只求你如果喜欢，可以分享给你的朋友们，好东西需要分享才能让其健康成长，每一次分享都是我们的动力，非常感谢！</string>
+    <string name="share">分享给朋友（谢谢QAQ）</string>
+    <string name="guess">反向推理绑定业务</string>
+    <string name="share_text">发现了一款非常美观易用的「验证码助手」轻App，开源的，可以在验证码短信来临的时，自动识别验证码，悬浮并且自动复制到剪切板，不用记忆不用输入，只要长按粘贴即可输入验证码。推荐~：http://fir.im/codehelper </string>
+    <string name="str_no_bussiness">暂未识别绑定任何业务！</string>
+    <string name="str_doing_hint">识别中，请稍等</string>
+    <string name="str_check_bussiness_hint">反向推理出的绑定业务详情 v0.1</string>
+    <string name="str_clear_messages_hint">操作后将会把短信收件箱中所有的验证码短信清空，但是我们还是会为你保存验证码记录（就算清空我们也还是能够帮你反向推理出绑定的业务）。请仔细检查并确认操作！</string>
+    <string name="str_version_morethan_five">Android 5.0 以上暂不支持清空验证码短信！</string>
+    <string name="tip">识别到验证码：%s，并已复制到剪贴板，长按你的输入框即可粘贴验证码</string>
+    <string name="notify_msg">当前验证码：%s（点击可复制）</string>
+    <string name="delete_sms_sesion_id_is">删除的会话Id为：</string>
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="2dp"
+    >
+
+    <TextView
+        android:id="@+id/avatar_tv"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:textSize="10sp"
+        android:text="验证码"
+        android:layout_gravity="top"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="@drawable/round_background"
+        />
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/NotificationTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:maxLines="2"
+            style="@style/NotificationContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>

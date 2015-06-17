@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="messageDatabase"></dbname>
+    <version value="8"></version>
+
+    <list>
+        <mapping class="me.drakeet.inmessage.model.Message"></mapping>
+    </list>
+
+</litepal>

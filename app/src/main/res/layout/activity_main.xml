@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                xmlns:fab="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity">
+
+    <include
+        layout="@layout/view_toolbar"
+        />
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/actionbar_height">
+
+                <me.drakeet.inmessage.widget.MultiSwipeRefreshLayout
+                    android:id="@+id/swipe_refresh_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.github.ksoichiro.android.observablescrollview.ObservableRecyclerView
+                        android:id="@+id/message_rv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                </me.drakeet.inmessage.widget.MultiSwipeRefreshLayout>
+
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_delete_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    fab:fab_icon="@mipmap/iconfont_lajitong"
+                    fab:fab_plusIconColor="@color/white"
+                    fab:fab_colorNormal="@color/md_red_400"
+                    fab:fab_colorPressed="@color/md_red_900"
+                    android:layout_gravity="bottom|right"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginRight="16dp"
+                    />
+
+            </FrameLayout>
+
+</RelativeLayout>
